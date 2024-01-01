@@ -4,8 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alinhamento vertical</title>
+    <style>
+
+        #container{
+
+            /*Meu método: aqui eu consigo alinhar todos os elementos dentro do container de uma só vez
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            */
+            position: relative;
+            background-color: purple;
+            height: 96vh;
+            padding: 10px;
+        }
+
+        #conteudo{
+
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            
+            background-color: yellow;
+            height: 200px;
+            width: 400px;
+            
+
+            /*Metodo do Guaanabara de Centralizar aqui eu alinho apenas o elemento que tiver essa propriedade 
+             
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            */
+            
+        }
+
+    </style>
 </head>
 <body>
-    
+    <section id="container">
+        <article id="conteudo">
+
+        </article>      
+    </section>
 </body>
 </html>
