@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 700px;
+            border-collapse: collapse;
+        }
+
+        thead{
+            background-color: #EAECF0;
+        }
+
+        th{
+            border: 1px solid #A2A9B1;
+            padding: 15px;
+            line-height: 1.4;
+            font-size: 11pt;
+        }
+
+        tbody{
+            background-color: #f5f6f7;
+        }
+
+        td{
+            border: 1px solid #A2A9B1;
+            padding: 8px;
+            text-align: center;
+            line-height: 1.4;
+        }
+
+        .UF{
+            text-align: left;
+            color: #4271D0;
+        }
+
+        .pop{
+            text-align: right;
+        }
+
+        .mudanca{
+            color: #008000;
+        }
+
+        .pc{
+            color: #4271D0;
+        }
+
+        tfoot{
+            background-color: #EAECF0;
+        }
+
+    
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+
+    <!--
+        ANATOMIA PARA TABELA GRANDES
+        TABLE
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+
+    <table>
+        <thead>
+            <tr>
+                <th>Posição</th>
+                <th>Unidade <br> federativa</th>
+                <th>Mudança</th>
+                <th>% da <br> pop. <br> total</th>
+                <th>País <br> comparável <br>(habitantes)</th>
+                <th>População <br>(Censo de 2022)</th>
+            </tr>
+
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td class="UF"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Bandeira_do_estado_de_S%C3%A3o_Paulo.svg/22px-Bandeira_do_estado_de_S%C3%A3o_Paulo.svg.png" alt="bandeira-são-paulo"> São Paulo</td>
+                    <td class="mudanca">+7,63%</td>
+                    <td>21,88%</td>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Flag_of_Argentina.svg/22px-Flag_of_Argentina.svg.png" alt="bandeira-argentina"><span class="pc"> Argentina</span> <br> (46 621 847) </td>
+                    <td class="pop">44 411 238</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td class="UF"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Bandeira_de_Minas_Gerais.svg/20px-Bandeira_de_Minas_Gerais.svg.png" alt="bandeira-minas-gerais"> Minas Gerais</td>
+                    
+                    <td class="mudanca">+4,81%</td>
+                    <td>10,11%</td>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Flag_of_Burkina_Faso.svg/22px-Flag_of_Burkina_Faso.svg.png" alt="bandeira-burquina-fasso"><span class="pc"> Burquina Fasso</span> <br> (20 903 273)</td>
+                    <td class="pop">20 538 718</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td class="UF"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Bandeira_do_estado_do_Rio_de_Janeiro.svg/20px-Bandeira_do_estado_do_Rio_de_Janeiro.svg.png" alt="bandeira-rio-de-janeiro"> Rio de Janeiro</td>
+                    
+                    <td class="mudanca">+0,40%</td>
+                    <td>7,91%</td>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Flag_of_Cambodia.svg/22px-Flag_of_Cambodia.svg.png" alt="bandeira-camboja"><span class="pc"> Camboja</span> <br> (16 718 965)</td>
+                    <td class="pop">16 054 524</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <th colspan="5">Total de habitantes</th>
+                    <td class="pop"><strong>81 004 480</strong></td>
+                </tr>
+            </tfoot>
+        </thead>
+    </table>
+</body>
+</html>
